@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>컬리마켓-알파</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="kurly-header">
+            <div class="top-bar">
+                <div class="Top-link">
+                    <div class="active">
+                        <a href="#" class="link">회원가입</a>
+                    </div>
+                    <div class="line"></div>
+                    <a href="#" class="link">로그인</a>
+                    <div class="line"></div>
+                    <div class="dropdown">
+                        <a href="#" class="link">고객센터 ▾</a>
+                    </div>
+                </div>
+                <div class="u">
+                    <div class="left">
+                        <a href="#" class="logo">
+                            <img src="data:image/svg+xml,%3Csvg%20width%3D%2282%22%20height%3D%2242%22%20viewBox%3D%220%200%2082%2042%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%20%20%20%3Cg%20fill-rule%3D%22nonzero%22%20fill%3D%22none%22%3E%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M0%200h82v42H0z%22%2F%3E%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M62.5.965c1.026-.557%202.466-.718%203.356.107.89.825.676%202.048%200%203.973%200%200-1.505%204.066-3.055%208.262l-.398%201.08c-1.414%203.83-2.762%207.487-2.927%207.963-1.498%204.245%201.967%204.122%204.024-.152%201.159-2.394%202.644-6.357%202.644-6.357.524-1.563.682-2.504.359-2.828-.107-.113.045-.252.18-.323%202.269-1.149%204.63-.072%203.336%203.31l-.054.138c-.387.978-2.68%206.733-2.68%206.733-.676%201.66-.595%203.236.418%203.236.686-.004%201.46-.385%202.304-1.088%201.818-1.504%203.222-4.312%203.727-5.454.23-.508%201.087-2.42%201.766-4.361.236-.665.369-1.36.395-2.065a.443.443%200%200%201%20.194-.459%203.578%203.578%200%200%201%201.67-.42%201.805%201.805%200%200%201%201.465.705c.443.598.566%201.579.103%202.808-.12.32-3.775%209.958-3.775%209.958v.026c2.041-1.223%203.87-1.313%204.953-.854l-.003-.013c1.495.647%201.99%202.44.938%203.559-.103.11-.362.084-.362-.09-.094-1.253-2.517-3.495-6.109-1.075l-.145.385-1.068%202.808c-2.62%207.018-5.403%2012.136-9.415%2011-2.688-.76-2.377-4.607.515-7.79a54.9%2054.9%200%200%201%206.49-5.898c.068-.188.13-.35.188-.511.278-.78.491-1.434.792-2.265l.159-.518c-.178.2-.498.573-.712.812-.712.8-2.494%202.757-5.329%202.207l-.234-.052c-2.05-.508-2.608-1.986-2.655-3.277-2.142%202.656-4.351%203.426-5.807%203.39-1.948-.048-3.378-1.514-2.427-4.29%201.058-3.106%205.5-15.332%206.795-19%20.485-1.58.666-2.58.184-2.974-.123-.103.052-.265.2-.346zm8.364%2028.778c-1.103.88-5.526%204.53-6.752%207.441-.505%201.197-.376%202.149.488%202.233%201.96.194%204.012-3.818%206.228-9.512zM16.028%205.352c-.087.332-1.319%203.86-2.701%207.749l-.209.586-.21.589-.215.604c4.691-1.123%2013.064-6.57%2014.035-10.085.12-.161.29-.22.566-.035.495.33.686%201.155.495%201.918-.764%203.038-6.416%207.341-11.379%209.554.612%201.637%202.682%206.267%204.206%209.111%201.663%203.119%203.42%204.575%206.147%204.737%201.46.085%203.014-.447%203.893-1.22l.148-.14-.013.03c.194-.204.511.077.366.323a6.5%206.5%200%200%201-4.992%202.867c-6.345.427-8.774-3.87-13.304-14.494-.366.126-.809.288-1.255.45-.075.187-2.07%205.642-2.13%205.823-.944%202.87-1.005%204.442-.358%204.895.145.09.074.333-.178.414-2.527.796-4.853-.696-3.559-4.442%201.161-3.316%205.69-16.18%206.914-19.626.427-1.294.197-2.125-.492-2.306C8.506%201.78.877%208.749%201.971%2015.184c.19%201.12.98%201.747%201.378%201.663a.133.133%200%200%201%20.156.159%201.508%201.508%200%200%201-1.845%201.032C.49%2017.782.107%2016.527.043%2015.88-.601%209.22%206.148%201.23%2012.389.58c2.378-.25%204.61.96%203.64%204.772zm24.04%209.913-.06.207-2.83%208.16c-.304.85-.1%201.737.501%201.902%201.757.482%204.028-2.145%205.131-4.733a67.794%2067.794%200%200%200%201.476-3.815c.582-1.643%201.106-3.183.783-3.908-.075-.168.045-.256.223-.35.505-.255%202.226-.825%203.141.068.695.674.609%201.771-.03%203.437l-.096.242.22-.273c2.703-3.3%204.792-4.292%206.563-3.597l.147.062c2.381%201.074%201.146%205.215-2.116%205.48-.2.017-.356-.126-.158-.407.395-.605.356-1.909-.796-2.022-1.152-.113-2.83%201.207-4.038%202.844-1.084%201.45-2.2%203.911-3.322%207.273-.272.818-.143%201.012-.11%201.067a.1.1%200%200%201%200%20.094c-.143.272-.965.596-1.76.596-1.625-.007-2.291-.945-1.967-2.437-1.848%201.764-3.711%202.614-5.355%202.466a2.524%202.524%200%200%201-2.236-3.103c-1.426%201.809-3.542%203.268-5.697%203.067-2.155-.2-3.5-1.666-2.802-4.788.59-2.598%201.592-5.29%202.207-7.027.514-1.456.618-2.407.294-2.75-.103-.114.055-.25.194-.324%201.69-.886%204.394-.314%203.63%202.09-.802%202.527-2.255%206.49-2.55%207.4-.737%202.287-.29%203.523.755%203.58%201.045.06%202.43-.96%203.42-2.503%201.76-2.524%202.581-5.685%203.377-7.882.204-.56.527-1.866.185-2.352-.091-.123.067-.258.275-.372%201.537-.849%204.285-.64%203.402%202.608z%22%20fill%3D%22%235F0080%22%2F%3E%20%20%20%20%3C%2Fg%3E%3C%2Fsvg%3E" alt="logo"></a>
+                            <div class="service-tabs">
+                                <a href="#" class="active">마켓컬리</a>
+                                <span>|</span>
+                                <a href="#">뷰티컬리</a>
+                            </div>
+                            <div class="search">
+                                <div class="search-box">
+                                    <input type="text" placeholder="검색어를 입력해주세요">
+                                    <button><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        <div class="right">
+                            <div class="icons">
+                                <a href="#" class="icon"><i class="fa fa-map-marker-alt"></i></a>
+                                <a href="#" class="icon"><i class="fa fa-heart"></i></a>
+                                <a href="#" class="icon"><i class="fa fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="nav-bar">
+                <div class="nav-left">
+                <button class="category-btn"><i class="fa fa-bars"></i> 카테고리</button>
+                </div>
+                <ul class="nav-menu">
+                <li><a href="#">신상품</a></li>
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">알뜰쇼핑</a></li>
+                <li><a href="#">특가/혜택</a></li>
+                </ul>
+                <div class="nav-right">
+                <a href="#" class="delivery-info">샛별·하루 배송안내</a>
+                </div>
+            </nav>
+    </header>
+    <div id="slider">
+        <ul class="slider-con">
+            <li class="slider"><a href="#"><img src="https://lego.kurly.com/event/2023/0911/join/coupon/pc_intro_251001.jpg" alt="슬라이더"></a></li>
+            <li class="slider"><a href="#"><img src="https://product-image.kurly.com/hdims/resize/%3E1900x%3E370/quality/85/src/banner/main/pc/img/9226e451-a997-436b-a9f9-f0d98d1f4764.png" alt="슬라이더"></a></li>
+            <li class="slider"><a href="#"><img src="https://product-image.kurly.com/hdims/resize/%3E1900x%3E370/quality/85/src/banner/main/pc/img/c9c63147-b35c-4c23-b77f-566efdf26f9a.png" alt="슬라이더"></a></li>
+            <li class="slider"><a href="#"><img src="https://product-image.kurly.com/hdims/resize/%3E1900x%3E370/quality/85/src/banner/main/pc/img/d73d0e11-87d7-4c11-827a-369e029157ff.png" alt="슬라이더"></a></li>
+            <li class="slider"><a href="#"><img src="https://product-image.kurly.com/hdims/resize/%3E1900x%3E370/quality/85/src/banner/main/pc/img/efa92e3e-c54d-4fcb-bf49-8eb67efd6521.png" alt="슬라이더"></a></li>
+            <li class="slider"><a href="#"><img src="https://product-image.kurly.com/hdims/resize/%3E1900x%3E370/quality/85/src/banner/main/pc/img/2cc6dec3-e158-4c1c-8eb3-17cce0952dcc.jpg" alt="슬라이더"></a></li>
+        </ul>
+
+        <!-- 좌우 이동 버튼 -->
+        <button class="arrow prev">&#10094;</button>
+        <button class="arrow next">&#10095;</button>
+
+        <!-- 하단 컨트롤러 -->
+        <div class="slider-controls">
+            <button class="play-pause-btn">⏸</button>
+            <span class="slide-count"><b class="current">01</b> | <span class="total">06</span></span>
+            <a href="#" class="view-all">전체보기 ›</a>
+        </div>
+    </div>
+
+    <div id="contents">
+        <section class="ranking-section">
+            <div class="ranking-header">
+                <h2>🏆 실시간 인기 랭킹 🏆</h2>
+                <p>가장 인기있는 상품만 모아보세요!</p>
+            </div>
+
+            <div class="ranking-list">
+                <!-- 1 -->
+                <div class="ranking-item">
+                <div class="badge-group">
+                    <span class="badge blue">멤버스특가</span>
+                    <span class="badge purple">원더핫딜</span>
+                </div>
+                <img src="https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/dd1c0a05-ca1a-4c21-a712-54338f3dbbf2.jpg" alt="상품 이미지">
+                <div class="info">
+                    <span class="rank">1</span>
+                    <p class="title">[남향푸드또띠아] 간편 브리또 15종 2개입 (택1)</p>
+                    <p class="price"><span class="discount">20%</span> 5,280원~</p>
+                    <button class="cart-btn">🛒 담기</button>
+                </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="ranking-item">
+                <div class="badge-group">
+                    <span class="badge purple">원더핫딜</span>
+                </div>
+                <img src="https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/608cceae-c9b8-4a82-9beb-71998a42bf0c.jpg" alt="상품 이미지">
+                <div class="info">
+                    <span class="rank">2</span>
+                    <p class="title">[베키아에누보] 바질토마토 치아바타 샌드위치</p>
+                    <p class="price"><span class="discount">14%</span> 11,980원~</p>
+                    <button class="cart-btn">🛒 담기</button>
+                </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="ranking-item">
+                <div class="badge-group">
+                    <span class="badge blue">멤버스특가</span>
+                    <span class="badge purple">원더핫딜</span>
+                </div>
+                <img src="https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/a68f6340-0b47-4929-9266-314dca796093.jpg?v=0531" alt="상품 이미지">
+                <div class="info">
+                    <span class="rank">3</span>
+                    <p class="title">[Kim's butcher] 돌돌 말이 대패 삼겹살 1kg</p>
+                    <p class="price"><span class="discount">30%</span> 11,890원~</p>
+                    <button class="cart-btn">🛒 담기</button>
+                </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="ranking-item">
+                <div class="badge-group">
+                    <span class="badge blue">멤버스특가</span>
+                    <span class="badge purple">원더핫딜</span>
+                </div>
+                <img src="https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/78ebd69e-1cc6-482c-b056-70f5da3f0022.jpg" alt="상품 이미지">
+                <div class="info">
+                    <span class="rank">4</span>
+                    <p class="title">[KF365] 양념 소불고기 2종 (택1)</p>
+                    <p class="price"><span class="discount">15%</span> 12,325원~</p>
+                    <button class="cart-btn">🛒 담기</button>
+                </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="ranking-item">
+                <div class="badge-group">
+                    <span class="badge purple">원더핫딜</span>
+                    <span class="badge pink">+20% 쿠폰</span>
+                </div>
+                <img src="https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/8ac2fba2-1973-485d-b6cb-e5804f9eb1b4.jpg" alt="상품 이미지">
+                <div class="info">
+                    <span class="rank">5</span>
+                    <p class="title">[제일맛계컬리] 육즙+왕교자 만두 1.01kg</p>
+                    <p class="price"><span class="discount">18%</span> 8,183원~</p>
+                    <button class="cart-btn">🛒 담기</button>
+                </div>
+                </div>
+            </div>
+
+            <div class="view-alll">
+                <button>전체보기 ></button>
+            </div>
+        </section>
+        <!-- 2 -->
+        <!-- 두 번째 콘텐츠 영역 -->
+            <section class="second-contents">
+            <div class="content-inner">
+                <div class="img-box">
+                <img src="https://product-image.kurly.com/hdims/resize/%3E1050x%3E140/quality/85/src/banner/random-band/pc/img/c0ce9654-0889-4ce0-b759-f7fa3221ecb4.png" alt="적립금 이벤트 이미지" class="main-img">
+                </div>
+            </div>
+            </section>
+        <!-- 3 -->
+         <section class="ranking-section">
+  <h2>오늘의 카테고리 랭킹</h2>
+
+  <!-- 탭 메뉴 -->
+  <div class="tab-menu">
+    <button class="active">간편식 TOP50</button>
+    <button>간식 TOP50</button>
+    <button>베이커리 TOP50</button>
+    <button>반찬 TOP50</button>
+    <button>유제품 TOP50</button>
+    <button>주방 TOP50</button>
+    <button>뷰티 TOP50</button>
+  </div>
+
+  <!-- 상품 리스트 -->
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b416cbf-8d57-44b2-bcc6-e6d6c141160f.jpg" alt="상품 이미지">
+      <span class="rank">1</span>
+      <p class="title">[이연복의 목란] 짬뽕 2인분</p>
+      <p class="price"><span class="discount">10%</span> 13,050원~</p>
+      <button class="btn-cart">담기</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/f41c45d5-23ce-4094-8523-938d924457e3.jpg" alt="상품 이미지">
+      <span class="rank">2</span>
+      <p class="title">[리틀넥] 인기 메뉴 3종 (택1)</p>
+      <p class="price">8,990원~</p>
+      <button class="btn-cart">담기</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/608cceae-c9b8-4a82-9beb-71998a42bf0c.jpg" alt="상품 이미지">
+      <span class="rank">3</span>
+      <p class="title">[베키아에누보] 바질토마토치즈 샌드위치</p>
+      <p class="price"><span class="discount">14%</span> 11,980원~</p>
+      <button class="btn-cart">담기</button>
+    </div>
+    <div class="product-card">
+      <img src="https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/5588e602-4670-4eba-80bd-0d8690493ad3.jpg" alt="상품 이미지">
+      <span class="rank">4</span>
+      <p class="title">[차려낸] 햄 가득 송탄식 부대찌개</p>
+      <p class="price"><span class="discount">25%</span> 11,900원~</p>
+      <button class="btn-cart">담기</button>
+    </div>
+  </div>
+
+  <div class="more">
+    <a href="#">간편식 TOP50 전체보기 ></a>
+  </div>
+</section>
+
+        <!-- 4 -->
+         <section class="curation-section">
+  <div class="curation-header">
+    <h2>취향 저격 콘텐츠, 컬리템</h2>
+    <p>직접 경험해 본 상품만 추천하는 콘텐츠 큐레이션!</p>
+  </div>
+
+  <div class="curation-list">
+    <div class="curation-card">
+      <img src="https://product-image.kurly.com/hdims/resize/%3E360x%3E634/quality/85/src/banner/main/pc/img/c2c7d0dc-5226-4612-8a9c-4523b528a029.png" alt="가정식 레시피">
+      <div class="curation-text">
+      </div>
+    </div>
+
+    <div class="curation-card">
+      <img src="https://product-image.kurly.com/hdims/resize/%3E360x%3E634/quality/85/src/banner/main/pc/img/43e45987-2df8-4996-b7c9-9021a6d0b745.png" alt="이색 레시피">
+      <div class="curation-text">
+      </div>
+    </div>
+
+    <div class="curation-card">
+      <img src="https://product-image.kurly.com/hdims/resize/%3E360x%3E634/quality/85/src/banner/main/pc/img/b1089e35-b4a2-4d6c-8799-62b3a8ebedbd.png" alt="신혼부부 홈다이닝">
+      <div class="curation-text">
+      </div>
+    </div>
+
+    <div class="curation-card">
+      <img src="https://product-image.kurly.com/hdims/resize/%3E360x%3E634/quality/85/src/banner/main/pc/img/c7edead3-9595-4ac1-81aa-7162905cf737.png" alt="아이 간식">
+      <div class="curation-text">
+      </div>
+    </div>
+  </div>
+</section>
+
+    </div>
+    <footer class="kurly-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-cs">
+        <h3>고객행복센터</h3>
+        <p class="cs-number">1644-1107</p>
+        <p class="cs-time">월~토요일 오전7시 - 오후6시</p>
+        <div class="cs-buttons">
+          <button>카카오톡 문의</button>
+          <button>1:1 문의</button>
+          <button>대량주문 문의</button>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <ul>
+          <li><a href="#">컬리소개</a></li>
+          <li><a href="#">컬리소개영상</a></li>
+          <li><a href="#">인재채용</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+          <li><a href="#">이용안내</a></li>
+        </ul>
+        <div class="company-info">
+          <p>(주)컬리 | 대표이사 : 홍길동</p>
+          <p>사업자등록번호 : 261-81-23567</p>
+          <p>주소 : 서울특별시 강남구 테헤란로 133, 컬리타워</p>
+          <p>통신판매업 : 제2018-서울강남-01646호</p>
+          <p>이메일 : help@kurlycorp.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© KURLY CORP. ALL RIGHTS RESERVED</p>
+      <div class="sns">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FontAwesome 아이콘 CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    </div>
+</body>
+</html>
